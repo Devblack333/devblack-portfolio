@@ -1,39 +1,27 @@
-// Gallery images
-const galleryImages = [
-    "assets/images/sample1.jpg",
-    "assets/images/sample2.jpg",
-    "assets/images/sample3.jpg"
-];
+// === Devblack Portfolio Animations ===
 
-// Add gallery images
-const galleryContainer = document.getElementById("galleryContainer");
-galleryImages.forEach(src => {
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = "Gallery Image";
-    galleryContainer.appendChild(img);
+// Smooth scroll between sections
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 50,
+        behavior: 'smooth'
+      });
+    }
+  });
 });
 
-// Games section
-const games = [
-    {
-        name: "اسرق المشاهير",
-        image: "assets/images/game1.jpg",
-        link: "https://www.roblox.com/games/103938520476530/unnamed",
-        stats: "130k+ Visits • 15k+ Favorites"
+// Glow effect on scroll
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.game-card, .gallery img').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      el.style.boxShadow = "0 0 20px rgba(179, 136, 255, 0.5)";
+    } else {
+      el.style.boxShadow = "none";
     }
-];
-
-const gamesContainer = document.getElementById("gamesContainer");
-games.forEach(game => {
-    const card = document.createElement("div");
-    card.classList.add("game-card");
-
-    card.innerHTML = `
-        <img src="${game.image}" alt="${game.name}">
-        <h3>${game.name}</h3>
-        <p>${game.stats}</p>
-        <a href="${game.link}" target="_blank">Play Now</a>
-    `;
-    gamesContainer.appendChild(card);
+  });
 });
