@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devblack Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Devblack</h1>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#games">Games</a>
-            <a href="#discord">Discord</a><!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Devblack Portfolio</title>
 
-  <!-- ✅ CSS link (must match folder path exactly) -->
+  <!-- ✅ Link CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Optional Google Fonts -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -31,35 +16,47 @@
     <div class="logo">Devblack</div>
     <nav>
       <ul>
-        <li><a href="#models">Models</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#ui">UI Designs</a></li>
         <li><a href="#about">About Me</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#discord">Discord</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Devblack</h1>
-      <p>Explore my Roblox creations, models, and UI designs.</p>
-      <a href="https://www.roblox.com/games/103938520476530/unnamed" class="btn-primary">Play My Game</a>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I'm a 16-year-old Roblox modeler and builder with 3 years of experience. I specialize in creating models, UI systems, and full experiences — all showcased in my portfolio!</p>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="assets/images/sample1.jpg" alt="Gallery Image">
+      <img src="assets/images/sample2.jpg" alt="Gallery Image">
+      <img src="assets/images/sample3.jpg" alt="Gallery Image">
     </div>
   </section>
 
-  <section id="projects" class="cards">
-    <h2>Featured Game</h2>
-    <div class="card">
-      <img src="assets/images/sample1.jpg" alt="Steal the Celebrities" />
+  <section id="games" class="section">
+    <h2>My Games</h2>
+    <div class="game-card">
+      <img src="assets/images/sample1.jpg" alt="Steal the Celebrities">
       <h3>اسرق المشاهير</h3>
-      <p>Experience a thrilling game inspired by creative chaos.</p>
+      <p>130k+ Visits • 15k+ Favorites</p>
       <a href="https://www.roblox.com/games/103938520476530/unnamed" class="btn">Play Now</a>
     </div>
   </section>
 
-  <section id="discord">
-    <h2>Join My Community</h2>
-    <iframe src="https://discord.com/widget?id=YOUR_DISCORD_ID&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  <section id="discord" class="section">
+    <h2>Join My Discord</h2>
+    <iframe src="https://discord.com/widget?id=YOUR_DISCORD_ID&theme=dark"
+      width="350"
+      height="500"
+      allowtransparency="true"
+      frameborder="0"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+    </iframe>
   </section>
 
   <footer>
@@ -68,20 +65,5 @@
 
   <!-- ✅ JS link -->
   <script src="js/app.js"></script>
-</body>
-</html>
-ord</a>
-        <iframe 
-            src="https://discord.com/widget?id=1237715531801427988&theme=dark" 
-            width="350" height="400"
-            allowtransparency="true" frameborder="0">
-        </iframe>
-    </section>
-
-    <footer>
-        <p>© 2025 Devblack | Built with passion for Roblox creation.</p>
-    </footer>
-
-    <script src="js/app.js"></script>
 </body>
 </html>
