@@ -3,106 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devblack Portfolio</title>
-
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Devblack</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="brand">
-        <div class="logo">Devblack</div>
-        <div class="tag">Roblox Modeler & Builder</div>
-      </div>
-
-      <button id="navToggle" class="nav-toggle" aria-label="Open navigation">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-
-      <nav class="site-nav" id="siteNav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#discord">Discord</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <h1>Devblack</h1>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#games">Games</a>
+      <a href="#discord">Discord</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <h1>Devblack</h1>
-        <p class="lead">16 y/o • Roblox modeler & builder • 3 years experience — high-quality models, props and optimized assets.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="#gallery">View Gallery</a>
-          <a class="btn btn-ghost" href="#games">My Games</a>
-        </div>
-      </div>
-      <div class="hero-art">
-        <!-- decorative block (use an image if you prefer) -->
-        <img src="assets/images/game1.jpg" alt="Showcase" loading="lazy">
-      </div>
-    </section>
-
-    <section id="about" class="section about">
-      <div class="container">
-        <h2>About</h2>
-        <p>Focused on building immersive Roblox worlds: optimized geometry, clean UVs, and assets ready for production. I enjoy polishing details and improving game performance.</p>
-      </div>
-    </section>
-
-    <section id="gallery" class="section gallery-section">
-      <div class="container">
-        <h2>Gallery</h2>
-        <div class="gallery-grid" id="galleryGrid">
-          <!-- JS will fill or static images placed in assets/images/ -->
-          <img src="assets/images/sample1.jpg" alt="Sample 1" loading="lazy">
-          <img src="assets/images/sample2.jpg" alt="Sample 2" loading="lazy">
-          <img src="assets/images/sample3.jpg" alt="Sample 3" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <section id="games" class="section games-section">
-      <div class="container">
-        <h2>My Games</h2>
-        <div class="games-grid" id="gamesGrid">
-          <!-- JS will render cards; fallback static card included -->
-          <article class="game-card">
-            <img src="assets/images/game1.jpg" alt="اسرق المشاهير" loading="lazy">
-            <div class="game-body">
-              <h3>اسرق المشاهير</h3>
-              <p class="muted">130k+ Visits • 15k+ Favorites</p>
-              <a class="btn btn-primary" href="https://www.roblox.com/games/103938520476530/unnamed" target="_blank" rel="noopener noreferrer">Play Now</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="discord" class="section discord-section">
-      <div class="container">
-        <h2>Join My Discord</h2>
-        <a class="btn discord-btn" href="https://discord.gg/1237715531801427988" target="_blank" rel="noopener noreferrer">Join Discord</a>
-        <div class="discord-widget-wrap">
-          <iframe src="https://discord.com/widget?id=1237715531801427988&theme=dark" width="100%" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <small>© 2025 Devblack • All rights reserved</small>
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="assets/images/1.jpg" alt="Model 1" />
+      <img src="assets/images/2.jpg" alt="Model 2" />
+      <img src="assets/images/3.jpg" alt="Model 3" />
+      <img src="assets/images/4.jpg" alt="Model 4" />
     </div>
+  </section>
+
+  <section id="games" class="games">
+    <h2>My Games</h2>
+    <div class="game-card">
+      <img src="assets/images/game1.jpg" alt="اسرق المشاهير" />
+      <h3>اسرق المشاهير</h3>
+      <p>Over <strong>130K+</strong> Visits • <strong>15K+</strong> Favorites</p>
+      <a href="https://www.roblox.com/games/103938520476530/unnamed" target="_blank" class="btn">Play Now</a>
+    </div>
+  </section>
+
+  <section id="discord" class="discord">
+    <h2>Join Our Discord</h2>
+    <iframe
+      src="https://discord.com/widget?id=1237715531801427988&theme=dark"
+      width="350"
+      height="500"
+      allowtransparency="true"
+      frameborder="0"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 Devblack. All rights reserved.</p>
   </footer>
 
-  <script src="js/app.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
