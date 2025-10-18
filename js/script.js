@@ -1,8 +1,8 @@
 // Gallery images
 const galleryImages = [
-    "images/sample1.jpg",
-    "images/sample2.jpg",
-    "images/sample3.jpg"
+    "assets/images/sample1.jpg",
+    "assets/images/sample2.jpg",
+    "assets/images/sample3.jpg"
 ];
 
 // Add gallery images
@@ -18,7 +18,7 @@ galleryImages.forEach(src => {
 const games = [
     {
         name: "اسرق المشاهير",
-        image: "images/game1.jpg",
+        image: "assets/images/game1.jpg",
         link: "https://www.roblox.com/games/103938520476530/unnamed",
         stats: "130k+ Visits • 15k+ Favorites"
     }
